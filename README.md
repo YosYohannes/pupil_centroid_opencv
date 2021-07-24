@@ -60,8 +60,8 @@ At the end, script will print a list of centroids position with the same lenght 
 ### Usage
 
 To use, add model and function file to your project directory
->> haarcascae_eye.xml
->> yos_pupil_detection.py
+> haarcascae_eye.xml  
+> yos_pupil_detection.py
 
 In the code, import the function and call it to get list of centroid position
 ```
