@@ -23,7 +23,7 @@ Prerequisites
 1. Clone this repository using  
 ```git clone https://github.com/YosYohannes/pupil_centroid_opencv```  
 1. Go to the git directory  
-```cd ~/pupil_centroid_opencv```  
+```cd pupil_centroid_opencv```  
 1. Create virtual environment  
 ```virtualenv venv```  
 1. Activate virtual environment  
