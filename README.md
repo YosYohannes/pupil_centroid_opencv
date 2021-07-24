@@ -25,7 +25,7 @@ Prerequisites
 1. Go to the git directory  
 ```cd ~/pupil_centroid_opencv```  
 1. Create virtual environment  
-```virtualev venv```  
+```virtualenv venv```  
 1. Activate virtual environment  
 MacOS / Linux  
 ```source venv/bin/activate```  
