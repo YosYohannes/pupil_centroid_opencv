@@ -17,13 +17,13 @@ The goal is to **develop a pupil detection algorithm to detect the centroid of t
 ## Installation
 
 Prerequisites
-: - Python 3.4+
-: - (Optional) venv
+- Python 3.4+
+- (Optional) venv
 
 1. Clone this repository using
 ```git clone https://github.com/YosYohannes/pupil_centroid_opencv```
 1. Go to the git directory 
-``cd ~/pupil_centroid_opencv````
+```cd ~/pupil_centroid_opencv```
 1. Create virtual environment
 ```virtualev venv```
 1. Activate virtual environment
@@ -39,11 +39,11 @@ Windows
 Run algorithm with sample video:
 ```python pupil_detect.py -p test_videos\sample.mkv```
 When installed correctly, the video will play with pupil centroid marked
-![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/frame.png)
+![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/frame.PNG)
 
 To run with heavier smoothing but less responsive:
 ```python pupil_detect.py -p test_videos\sample.mkv -s```
-![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/double.png)
+![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/double.PNG)
 
 To display layer view in a double frame:
 ```python pupil_detect.py -p test_videos\sample.mkv -d```
