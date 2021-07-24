@@ -2,7 +2,7 @@
 
 This is a solution submission to [test_name: FindPupilCentroid](https://github.com/lackdaz/cv_find_pupil_centroid)
 Authored by [Seth Loh](https://github.com/lackdaz) (c) 2020
----
+
 ## Objective
 
 The goal is to **develop a pupil detection algorithm to detect the centroid of the pupil** that is lightweight and reliable.
@@ -20,32 +20,34 @@ Prerequisites
 - Python 3.4+
 - (Optional) venv
 
-1. Clone this repository using
-```git clone https://github.com/YosYohannes/pupil_centroid_opencv```
-1. Go to the git directory 
-```cd ~/pupil_centroid_opencv```
-1. Create virtual environment
-```virtualev venv```
-1. Activate virtual environment
-MacOS / Linux
-```source venv/bin/activate```
-Windows
-```venv\Scripts\activate```
-1. Install packages
-```pip install -r requirements.txt```
+1. Clone this repository using  
+```git clone https://github.com/YosYohannes/pupil_centroid_opencv```  
+1. Go to the git directory  
+```cd ~/pupil_centroid_opencv```  
+1. Create virtual environment  
+```virtualev venv```  
+1. Activate virtual environment  
+MacOS / Linux  
+```source venv/bin/activate```  
+Windows  
+```venv\Scripts\activate```  
+1. Install packages  
+```pip install -r requirements.txt```  
 
 ### Getting Started
 
-Run algorithm with sample video:
-```python pupil_detect.py -p test_videos\sample.mkv```
+Run algorithm with sample video:  
+```python pupil_detect.py -p test_videos\sample.mkv```  
 When installed correctly, the video will play with pupil centroid marked
+
 ![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/frame.PNG)
 
-To run with heavier smoothing but less responsive:
+To run with heavier smoothing but less responsive:  
 ```python pupil_detect.py -p test_videos\sample.mkv -s```
+
 ![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/double.PNG)
 
-To display layer view in a double frame:
+To display layer view in a double frame:  
 ```python pupil_detect.py -p test_videos\sample.mkv -d```
 
 
@@ -108,7 +110,7 @@ On smooth mode, there are very little jitter, but it takes around 0.5 seconds fo
 On default mode, there are slightly more jitter especially during movement. But is able to maintain a more accurate centroid position.
 
 Detection rate works best when pupil size is around 80-150 px in radius. Zooming and out can be managed by increasing the search range at cost of more processing.
----
-  /)/)
- (o.o)
-o(")(")
+
+  /)/)  
+ (o.o)  
+o(")(")  
