@@ -111,6 +111,9 @@ On default mode, there are slightly more jitter especially during movement. But 
 
 Detection rate works best when pupil size is around 80-150 px in radius. Zooming and out can be managed by increasing the search range at cost of more processing.
 
+<pre>
   /)/)  
  (o.o)  
-o(")(")  
+o(")(") 
+</pre>
+ 
