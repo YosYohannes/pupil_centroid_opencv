@@ -21,46 +21,56 @@ Prerequisites
 - (Optional) venv
 
 1. Clone this repository using  
-```git clone https://github.com/YosYohannes/pupil_centroid_opencv```  
 1. Go to the git directory  
-```cd pupil_centroid_opencv```  
 1. Create virtual environment  
-```virtualenv venv```  
 1. Activate virtual environment  
-MacOS / Linux  
-```source venv/bin/activate```  
-Windows  
-```venv\Scripts\activate```  
 1. Install packages  
-```pip install -r requirements.txt```  
+
+MacOS / Linux 
+```
+git clone https://github.com/YosYohannes/pupil_centroid_opencv
+cd pupil_centroid_opencv  
+virtualenv venv 
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Windows 
+```
+git clone https://github.com/YosYohannes/pupil_centroid_opencv
+cd pupil_centroid_opencv  
+virtualenv venv 
+venv\Scripts\activate
+pip install -r requirements.txt 
+``````  
 
 ### Getting Started
 
 Run algorithm with sample video:  
-```python pupil_detect.py -p test_videos\sample.mkv```  
+```python pupil_detect.py -p test_videos/sample.mkv```  
 When installed correctly, the video will play with pupil centroid marked
 
 ![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/frame.PNG)
 
 To run with heavier smoothing but less responsive:  
-```python pupil_detect.py -p test_videos\sample.mkv -s```
+```python pupil_detect.py -p test_videos/sample.mkv -s```
 
 ![alt text](https://github.com/YosYohannes/pupil_centroid_opencv/blob/main/assets/double.PNG)
 
 To display layer view in a double frame:  
-```python pupil_detect.py -p test_videos\sample.mkv -d```
+```python pupil_detect.py -p test_videos/sample.mkv -d```
 
 
 While video is playing use `spacebar` to play/pause the video.
 While paused, use `k` to go to next frame.
 Use `esc` to end video.
 
-At the end, script will print a list of centroids position with the same lenght as number of video frames analysed, `(-1, -1)` is value returned for no pupil centroid found
+At the end, script will print a list of centroids position with the same length as number of video frames analysed, `(-1, -1)` is value returned for no pupil centroid found
 
 ### Usage
 
 To use, add model and function file to your project directory
-> haarcascae_eye.xml  
+> haarcascade_eye.xml  
 > yos_pupil_detection.py
 
 In the code, import the function and call it to get list of centroid position

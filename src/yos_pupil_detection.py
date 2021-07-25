@@ -83,12 +83,18 @@ def get_centroid(path, smooth=False, display=False, show=True):
     scale = int(max(scale_x, scale_y))
     w = w * scale
     h = h * scale
+    if show:
+        cv2.namedWindow("Frame", 0)
+        cv2.moveWindow("Frame", 0, 0)
+    if display:
+        cv2.namedWindow("Processing", 0)
+        cv2.moveWindow("Processing", w, 0)
     # endregion
 
     # region Start of variables
     kernel = np.ones((5, 5), np.uint8)
     font = cv2.FONT_HERSHEY_SIMPLEX
-    eye_cascade = cv2.CascadeClassifier('src/haarcascae_eye.xml')  # eye classifier
+    eye_cascade = cv2.CascadeClassifier('src/haarcascade_eye.xml')  # eye classifier
     paused = False
     fr_counter = 0
     output = []
@@ -196,8 +202,9 @@ def get_centroid(path, smooth=False, display=False, show=True):
 
         if display:
             cv2.imshow("Processing", grey_frame)
-        cv2.putText(frame, 'fr no: ' + str(fr_counter), (10, 50), font, 1, (255, 255, 255), 2)
-        cv2.imshow("Frame", frame)
+        if show:
+            cv2.putText(frame, 'fr no: ' + str(fr_counter), (10, 50), font, 1, (255, 255, 255), 2)
+            cv2.imshow("Frame", frame)
 
         if not pupil_found:
             output.append((-1, -1))
